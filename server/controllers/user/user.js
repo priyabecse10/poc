@@ -104,6 +104,7 @@ module.exports = {
         .catch(error => res.status(400).send(error));
     },
     logout(req,res){
+        const token=res.headers("authorization");
       return user
      .destroy(token)
      .then(res.send({token:null,msg:"successfully logged out"}))

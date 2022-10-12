@@ -1,4 +1,4 @@
-const user = require('../../models').user;
+const user = require('../../models').users;
 const bcrypt=require('bcryptjs');
 const jwt=require("jsonwebtoken");
 const secretKey="Todo-Poc-CRUD-API";

@@ -1,5 +1,5 @@
 const bookcontroller=require('../../controllers/book/book');
-const authUser=require('./middleware');
+const authUser=require('../../controllers/middleware');
 
 module.exports=(app)=>{
 app.post('/v1/book/create',authUser,bookcontroller.create);
